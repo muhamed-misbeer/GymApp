@@ -1,4 +1,4 @@
-package com.gymapp;
+package com.wearable;
 
 import com.facebook.react.ReactActivity;
 

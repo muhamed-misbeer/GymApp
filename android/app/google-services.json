@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1005172245853",
+    "project_id": "wearable-345508",
+    "storage_bucket": "wearable-345508.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005172245853:android:07e578b700a3758d0b54b4",
+        "android_client_info": {
+          "package_name": "com.wearable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005172245853-jb34d2o3539dmdt2or97i7jl72kp5fop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wearable",
+            "certificate_hash": "99e2d35c39f1fc3a6fa80f3480b3d492206fd6d2"
+          }
+        },
+        {
+          "client_id": "1005172245853-am4lks54543pb2skjm8pvvb8meitjgcg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaJo3d-qgPbY4zpZh-rrsogxJ-bqgZW98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005172245853-am4lks54543pb2skjm8pvvb8meitjgcg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
