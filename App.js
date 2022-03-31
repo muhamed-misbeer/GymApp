@@ -1,15 +1,29 @@
-import React from 'react';
-import {View,Text} from 'react-native'
-import Dashboard from './src/screens/dashboard';
-import Login from './src/screens/login';
-import Map from './src/screens/map';
+import React, { useEffect, useState } from 'react';
+import { View, Text } from 'react-native'
+import { Provider } from 'react-redux';
+import { AuthProvider } from './src/authProvider';
+import Route from './src/navigations/route';
+import store from './src/redux/store/store';
+import SplashScreen from './src/screens/splashScreen';
 const App = () => {
-
+  const [isSlapsh, setIsSplash] = useState(true)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsSplash(false)
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <View>
-      <Login/>
-      <Dashboard/>
-    </View>
+    <Provider store={store}>
+      <AuthProvider>
+        {isSlapsh ?
+          <SplashScreen/>
+          :
+          <Route />
+        }
+      </AuthProvider>
+    </Provider>
+
   );
 };
 
